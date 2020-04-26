@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/styleSucc.css')}}>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+        <title>Download Page</title>
+    </head>
+    <body>
+        <header style = "height: 100% , width : 100% background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('new.jpg');">
+            <nav>
+                <ul style = "padding-right: 2%;" class = "main-nav">
+                    <li><a href ="/">HomePage</a></li>
+                    <!-- <li><a href = "#">Sign up</a></li> -->
+                
+                </ul>
+               
+            </nav>
+            
+            
+            
+            <div style = "left : 0; width: 60%; margin-left: 4%;" class = "text-box">
+            <h1>File Uploaded Successfully</h1>
+            <h2 style="margin-bottom: 24px;"> File name : {{name}} </h2>
+            <form>
+            <a class = 'btn btn-upload' href = "/get_image/{{name}}">Download</a>
+            <!-- <button style = "    background-color: #e07d05;
+                                border: 1px solid #e07d05;
+                                color: white;
+                                margin-top: 2%
+                                display: inline-block;
+                                padding: 10px 30px 10px 30px;
+                                font-weight: 300;
+                                text-decoration: none;
+                                border-radius: 200px;
+                                color: white;
+                                transition: background-color 0.2s , border 0.2s , color 0.2s;">
+                            Download</button> -->
+            </form>
+            </div>
+
+
+
+        </header>
+
+
+    </body>
+
+    
+
+
+
+
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+        <title>Face Blurr</title>
+    </head>
+    <body>
+        <header style = "height: 100% , width : 100%">
+            <nav>
+                <ul style = "padding-right: 2%;" class = "main-nav">
+                    <li><a href ="/use">How it works</a></li>
+                    <!-- <li><a href = "#">Sign up</a></li> -->
+                
+                </ul>
+             
+            </nav>
+            
+            
+            
+            <div style = "left : 0; width: 40%; margin-left: 50%;" class = "text-box">
+	            <h1>No more Photoshop for<br>Blurring your face!</h1>
+	            <div>
+	         
+
+	            <form action="/success" method="post" , enctype="multipart/form-data">
+	            	<!-- <input style = ""class = 'btn btn-upload' type="file" name="file"> -->
+	            	<!-- <input class = 'btn btn-download' type="submit" value="upload"> -->
+	            	<label style = "position: relative;
+										  overflow: hidden;
+										  float: left;
+										  clear: left;"class="myFile">
+					  <img src="http://wscont1.apps.microsoft.com/winstore/1x/c37a9d99-6698-4339-acf3-c01daa75fb65/Icon.13385.png" alt="" />
+					  <input style = "display: block;
+									  position: absolute;
+									  top: 0;
+									  right: 0;
+									  opacity: 0;
+									  font-size: 100px;
+									  filter: alpha(opacity=0);
+									  cursor: pointer;"type="file" name = "file"/>
+					</label>
+					<!-- <a class = 'btn btn-upload' href = "/success">upload</a> -->
+					<!-- <a style = "margin-left : 30%;" class = 'btn btn-download' href = "success">upload</a> -->
+					<button class="upload-btn" style = "    background-color: #e07d05;
+							    border: 1px solid #e07d05;
+							    color: white;
+    							margin-left: 30%;
+    						    display: inline-block;
+							    padding: 10px 30px 10px 30px;
+							    font-weight: 300;
+							    text-decoration: none;
+							    border-radius: 200px;
+							    color: white;
+							    transition: background-color 0.2s , border 0.2s , color 0.2s;">
+						    Upload</button>
+					<!-- <input class = 'btn btn-download' type="submit" value="upload"> -->
+	            	 <!-- <a class = 'btn btn-upload' href = "#">upload</a>
+	            	<a class = 'btn btn-download' href = "#">download</a> -->
+	        	</form>
+        		</div>
+            </div>
+
+
+
+        </header>
+
+
+    </body>
+
+    
+
+
+
+
+
+</html>
